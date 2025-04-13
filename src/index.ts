@@ -11,7 +11,7 @@ async function startServer() {
   // Initialize TypeORM
   try {
     await AppDataSource.initialize();
-    console.log("Data Source has been initialized!");
+    console.log("🚀 Data Source has been initialized successfully!");
   } catch (error) {
     console.error("Error during Data Source initialization:", error);
     process.exit(1);
@@ -41,8 +41,8 @@ async function startServer() {
   // Start server
   const PORT = process.env.PORT || 4004;
   app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-    console.log(`GraphQL endpoint: http://localhost:${PORT}${server.graphqlPath}`);
+    console.log(`🚀 Server is runningg on http://localhost:${PORT}`);
+    console.log(`📚 GraphQL endpoint: http://localhost:${PORT}${server.graphqlPath}`);
   });
 }
 
